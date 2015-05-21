@@ -1,0 +1,9 @@
+/patch-OMakefile/1.2/Wed Dec 26 10:24:17 2012//Tpkgsrc-2015Q1
+/patch-src_gifread.c/1.2/Sat May 24 04:05:24 2014//Tpkgsrc-2015Q1
+/patch-src_gifwrite.c/1.2/Sat May 24 04:05:24 2014//Tpkgsrc-2015Q1
+/patch-src_jpegread.c/1.1/Wed Dec 26 10:24:17 2012//Tpkgsrc-2015Q1
+/patch-src_pngread.c/1.1/Sun Aug  7 20:36:20 2011//Tpkgsrc-2015Q1
+/patch-src_pngwrite.c/1.1/Sun Aug  7 20:36:20 2011//Tpkgsrc-2015Q1
+/patch-src_tiffread.c/1.2/Sun Jul 29 12:52:55 2012//Tpkgsrc-2015Q1
+/patch-src_tiffwrite.c/1.1/Sun Jul 29 12:52:55 2012//Tpkgsrc-2015Q1
+D

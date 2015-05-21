@@ -1,0 +1,10 @@
+/DESCR/1.1/Wed May 15 06:58:50 2013//Tpkgsrc-2015Q1
+/MESSAGE/1.2/Sun May 19 22:18:05 2013//Tpkgsrc-2015Q1
+/MESSAGE.NetBSD/1.1/Wed May 15 06:58:50 2013//Tpkgsrc-2015Q1
+/PLIST/1.6/Tue Mar 11 14:05:17 2014//Tpkgsrc-2015Q1
+/TODO/1.1/Wed May 15 06:58:50 2013//Tpkgsrc-2015Q1
+/buildlink3.mk/1.1/Sat Jul 26 20:27:47 2014//Tpkgsrc-2015Q1
+D/files////
+D/patches////
+/Makefile/1.26.2.1/Thu Apr 30 01:07:33 2015//Tpkgsrc-2015Q1
+/distinfo/1.15.2.1/Thu Apr 30 01:07:33 2015//Tpkgsrc-2015Q1

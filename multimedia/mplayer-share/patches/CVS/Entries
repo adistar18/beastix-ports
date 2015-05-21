@@ -1,0 +1,17 @@
+/patch-CVE-2014-4610/1.1/Fri Jun 27 15:58:44 2014//Tpkgsrc-2015Q1
+/patch-aa/1.31/Sat Jan 12 11:55:35 2013//Tpkgsrc-2015Q1
+/patch-ae/1.13/Mon Jun 11 21:55:34 2012//Tpkgsrc-2015Q1
+/patch-an/1.4/Mon Jun 11 21:55:34 2012//Tpkgsrc-2015Q1
+/patch-ffmpeg_libavcodec_arm_asm.S/1.1/Tue Mar 24 14:27:20 2015//Tpkgsrc-2015Q1
+/patch-ffmpeg_libavcodec_arm_simple__idct__arm.S/1.1/Tue Mar 24 14:27:20 2015//Tpkgsrc-2015Q1
+/patch-ffmpeg_libavutil_x86__cpu.h/1.1/Fri Jun 27 12:56:16 2014//Tpkgsrc-2015Q1
+/patch-gui_interface.c/1.1/Thu Oct  9 14:48:51 2014//Tpkgsrc-2015Q1
+/patch-libao2_ao_sun.c/1.2/Mon Jun 11 13:41:13 2012//Tpkgsrc-2015Q1
+/patch-libmpdemux_demux__gif.c/1.2/Fri May 16 09:49:06 2014//Tpkgsrc-2015Q1
+/patch-libvo_vo__corevideo.h/1.1/Tue Jun 24 12:03:42 2014//Tpkgsrc-2015Q1
+/patch-libvo_vo__gif89a.c/1.2/Fri May 16 09:49:06 2014//Tpkgsrc-2015Q1
+/patch-stream_dvb_tune.c/1.2/Mon Jun 11 21:55:34 2012//Tpkgsrc-2015Q1
+/patch-stream_dvbin.h/1.2/Mon Jun 11 21:55:34 2012//Tpkgsrc-2015Q1
+/patch-sub_osd.c/1.2/Mon Jun 11 21:55:34 2012//Tpkgsrc-2015Q1
+/patch-sub_subreader.c/1.2/Mon Jun 11 21:55:34 2012//Tpkgsrc-2015Q1
+D

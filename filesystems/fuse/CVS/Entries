@@ -1,0 +1,9 @@
+/DESCR/1.2/Wed Feb 21 06:08:30 2007//Tpkgsrc-2015Q1
+/MESSAGE.Linux/1.1/Wed Aug 25 08:02:21 2010//Tpkgsrc-2015Q1
+/Makefile/1.10/Mon Nov 24 13:19:12 2014//Tpkgsrc-2015Q1
+/PLIST.Linux/1.2/Sun Oct 16 23:45:45 2011//Tpkgsrc-2015Q1
+/PLIST.common/1.2/Mon Nov 24 13:23:10 2014//Tpkgsrc-2015Q1
+/buildlink3.mk/1.5/Mon Sep  6 12:13:30 2010//Tpkgsrc-2015Q1
+/builtin.mk/1.2/Mon Apr  8 11:17:13 2013//Tpkgsrc-2015Q1
+/distinfo/1.4/Mon Nov 24 13:19:12 2014//Tpkgsrc-2015Q1
+D/patches////

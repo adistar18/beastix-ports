@@ -1,0 +1,14 @@
+/ALTERNATIVES/1.4/Wed Mar 12 12:57:06 2014//Tpkgsrc-2015Q1
+/DESCR/1.1.1.1/Sun Apr 19 14:42:48 2009//Tpkgsrc-2015Q1
+/Makefile/1.64/Mon Oct 27 20:11:34 2014//Tpkgsrc-2015Q1
+/PLIST.Darwin/1.6/Sun Apr 18 09:20:25 2010//Tpkgsrc-2015Q1
+/PLIST.IRIX/1.1.1.1/Sun Apr 19 14:42:48 2009//Tpkgsrc-2015Q1
+/PLIST.Linux/1.2/Mon Sep  6 17:33:57 2010//Tpkgsrc-2015Q1
+/PLIST.Linux3/1.1/Fri Oct 28 10:38:07 2011//Tpkgsrc-2015Q1
+/PLIST.SunOS/1.2/Mon Sep  6 17:33:57 2010//Tpkgsrc-2015Q1
+/PLIST.common/1.17/Wed Mar 12 12:57:06 2014//Tpkgsrc-2015Q1
+/PLIST.common_end/1.5/Sun Jun 14 20:34:14 2009//Tpkgsrc-2015Q1
+/buildlink3.mk/1.6/Wed Nov  6 07:25:49 2013//Tpkgsrc-2015Q1
+/dist.mk/1.4/Wed Nov  6 07:25:49 2013//Tpkgsrc-2015Q1
+/distinfo/1.60/Mon Oct 27 20:11:34 2014//Tpkgsrc-2015Q1
+D/patches////

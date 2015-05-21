@@ -1,0 +1,17 @@
+/DEINSTALL/1.2/Mon Oct 15 15:37:13 2007//Tpkgsrc-2015Q1
+/DESCR/1.1.1.1/Fri Apr 28 18:10:21 2006//Tpkgsrc-2015Q1
+/MESSAGE/1.2/Fri Aug 10 17:57:03 2007//Tpkgsrc-2015Q1
+/Makefile/1.45/Thu May 29 23:36:45 2014//Tpkgsrc-2015Q1
+/Makefile.common/1.14/Sat Jun  9 11:45:38 2012//Tpkgsrc-2015Q1
+/PLIST/1.11/Tue Mar 11 14:05:02 2014//Tpkgsrc-2015Q1
+/PLIST.dsn/1.2/Sun Jun 14 18:04:30 2009//Tpkgsrc-2015Q1
+/PLIST.esmtp/1.4/Tue Mar 11 14:05:02 2014//Tpkgsrc-2015Q1
+/PLIST.fax/1.2/Sun Jun 14 18:04:30 2009//Tpkgsrc-2015Q1
+/PLIST.ldap/1.2/Tue Mar 11 14:05:02 2014//Tpkgsrc-2015Q1
+/PLIST.local/1.2/Sun Jun 14 18:04:30 2009//Tpkgsrc-2015Q1
+/PLIST.uucp/1.2/Sun Jun 14 18:04:30 2009//Tpkgsrc-2015Q1
+/distinfo/1.19/Mon Apr 29 21:22:17 2013//Tpkgsrc-2015Q1
+/options.mk/1.11/Sat Jun  9 11:45:38 2012//Tpkgsrc-2015Q1
+/pkginstall.mk/1.8/Sat Jun  9 11:45:38 2012//Tpkgsrc-2015Q1
+D/files////
+D/patches////

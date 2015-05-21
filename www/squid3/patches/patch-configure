@@ -1,0 +1,24 @@
+$NetBSD: patch-configure,v 1.5.2.1 2015/05/11 19:42:27 tron Exp $
+
+* Portability fix.
+
+--- configure.orig	2015-05-01 11:29:25.000000000 +0000
++++ configure
+@@ -32733,7 +32733,7 @@ done
+ ## Please see the COPYING and CONTRIBUTORS files for details.
+ ##
+ 
+-if test "x$with_krb5" == "xyes"; then
++if test "x$with_krb5" = "xyes"; then
+   BUILD_HELPER="kerberos"
+ fi
+ 
+@@ -33292,7 +33292,7 @@ done
+ ## Please see the COPYING and CONTRIBUTORS files for details.
+ ##
+ 
+-if test "x$with_krb5" == "xyes"; then
++if test "x$with_krb5" = "xyes"; then
+   BUILD_HELPER="kerberos_ldap_group"
+   if test "x$with_apple_krb5" = "xyes" ; then
+     { $as_echo "$as_me:${as_lineno-$LINENO}: checking for main in -lresolv" >&5

@@ -1,0 +1,16 @@
+/patch-Makefile.in/1.2/Fri Mar  6 21:03:20 2015//Tpkgsrc-2015Q1
+/patch-builtin.cpp/1.1/Wed Mar 18 15:03:43 2015//Tpkgsrc-2015Q1
+/patch-common.cpp/1.1/Wed Mar 18 15:03:43 2015//Tpkgsrc-2015Q1
+/patch-common.h/1.1/Wed Mar 18 15:03:43 2015//Tpkgsrc-2015Q1
+/patch-configure/1.3/Fri Mar  6 21:03:20 2015//Tpkgsrc-2015Q1
+/patch-env.cpp/1.1/Wed Mar 18 15:03:43 2015//Tpkgsrc-2015Q1
+/patch-exec.cpp/1.1/Wed Mar 18 15:03:43 2015//Tpkgsrc-2015Q1
+/patch-fallback.h/1.1/Wed Mar 18 15:03:43 2015//Tpkgsrc-2015Q1
+/patch-history.cpp/1.1/Wed Mar 18 15:03:43 2015//Tpkgsrc-2015Q1
+/patch-output.cpp/1.1/Wed Mar 18 15:03:43 2015//Tpkgsrc-2015Q1
+/patch-output.h/1.1/Wed Mar 18 15:03:43 2015//Tpkgsrc-2015Q1
+/patch-parser.cpp/1.1/Wed Mar 18 15:03:43 2015//Tpkgsrc-2015Q1
+/patch-parser__keywords.cpp/1.1/Wed Mar 18 15:03:43 2015//Tpkgsrc-2015Q1
+/patch-proc.h/1.2/Fri Mar  6 21:03:20 2015//Tpkgsrc-2015Q1
+/patch-screen.cpp/1.2/Wed Mar 18 15:03:43 2015//Tpkgsrc-2015Q1
+D

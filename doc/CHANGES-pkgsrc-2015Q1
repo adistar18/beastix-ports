@@ -1,0 +1,124 @@
+$NetBSD: CHANGES-pkgsrc-2015Q1,v 1.1.2.34 2015/05/15 12:40:54 bsiegert Exp $
+
+Changes to the packages collection and infrastructure on the
+pkgsrc-2015Q1 branch:
+
+Created pkgsrc-2015Q1 branch [agc 2015-04-02 22:06 UTC]
+
+Pullup ticket #4655 - requested by he
+graphics/ImageMagick: security update
+Pullup ticket #4656 - requested by joerg
+graphics/py-pygal: build fix
+Pullup ticket #4657 - requested by wiz
+net/tor: security update
+Pullup ticket #4659 - requested by tnn
+graphics/gd - security fix
+Pullup ticket #4661 - requested by tnn
+sysutils/coreutils - security fix
+Pullup ticket #4662 - requested by tnn
+misc/less - security fix
+Pullup ticket #4663 - requested by joerg
+emulators/dgen - ARM build fix
+Pullup ticket #4660 - requested by hannken
+net/chrony: security update
+Pullup ticket #4665 - requested by joerg
+inputmethod/librime - build fix
+Pullup ticket #4668 - requested by manu
+www/ap2-auth-mellon - apache24 support
+Pullup ticket #4664 - requested by joerg
+security/beecrypt: build fix
+Pullup ticket #4666 - requested by joerg
+devel/gperftools: build fix
+Pullup ticket #4671 - requested by joerg
+devel/spin: build fix
+Pullup ticket #4672 - requested by joerg
+devel/st: build fix
+Pullup ticket #4673 - requested by joerg
+games/ivan: build fix
+Pullup ticket #4669 - requested by manu
+databases/php-ldap: build fix
+Pullup ticket #4674 - requested by joerg
+games/orbital_eunuchs_sniper: packaging fix
+Pullup ticket #4675 - requested by joerg
+games/ioquake3: build fix
+Pullup ticket #4676 - requested by tron
+net/tigervnc: build fix
+Pullup ticket #4677 - requested by taca
+lang/php54: security update
+Pullup ticket #4678 - requested by taca
+net/ntp4: security update
+Pullup ticket #4679 - requested by taca
+lang/php55: security update
+Pullup ticket #4680 - requested by taca
+lang/php56: security update
+Pullup ticket #4681 - requested by joerg
+graphics/p5-PerlMagick: bug fix patch
+Pullup ticket #4654 - requested by dsainty
+security/zoneminder: security update
+Pullup ticket #4683 - requested by joerg
+editors/p5-Wx-Scintilla: linker fix patch
+Pullup ticket #4682 - requested by hiramatsu
+inputmethod/librime: build fix
+Pullup ticket #4670 - requested by joerg
+devel/rsltc: build fix
+Pullup ticket #4684 - requested by taca
+lang/ruby200-base: security update
+Pullup ticket #4685 - requested by taca
+lang/ruby21-base: security update
+Pullup ticket #4686 - requested by taca
+lang/ruby22-base: security update
+Pullup ticket #4687 - requested by joerg
+comms/java-rxtx: build fix
+Pullup ticket #4688 - requested by joerg
+print/pdf2djvu: build fix
+Pullup ticket #4689 - requested by dholland
+net/socat: build fix
+Pullup ticket #4700 - requested by manu
+sysutils/coreutils: build fix
+Pullup ticket #4701 - requested by manu
+devel/gnustep-objc: build fix
+Pullup ticket #4702 - requested by manu
+devel/gnustep-make: build fix
+Pullup ticket #4706 - requested by roy
+net/dnsmasq: security patch
+Pullup ticket #4696 - requested by spz
+textproc/libxml2: security patch
+Pullup ticket #4697 - requested by spz
+x11/xlockmore: security update
+x11/xlockmore-lite: security update
+Pullup ticket #4698 - requested by spz
+sysutils/xenkernel41: security patch
+sysutils/xenkernel42: security patch
+sysutils/xenkernel45: security patch
+Pullup ticket #4699 - requested by spz
+sysutils/xenkernel45: security patch
+Pullup ticket #4703 - requested by spz
+databases/gnats: security update
+Pullup ticket #4705 - requested by spz
+www/curl: security update
+Pullup ticket #4690 - requested by joerg
+sysutils/dvdisaster: build fix
+Pullup ticket #4691 - requested by joerg
+multimedia/libmpeg3: build fix
+Pullup ticket #4692 - requested by joerg
+print/hplip: build fix
+Pullup ticket #4693 - requested by joerg
+print/hpijs: build fix
+Pullup ticket #4694 - requested by joerg
+emulators/bochs: build fix
+Pullup ticket #4695 - requested by joerg
+devel/tavrasm: build fix
+Pullup ticket #4707 - requested by joerg
+pkgtools/libnbcompat: build fix
+Pullup ticket #4709 - requested by agc
+pkgtools/pkg_install: bug fix update
+Pullup ticket #4711 - requested by taca
+www/squid3: security update
+Pullup ticket #4712 - requested by kim
+audio/icecast: security update
+Pullup ticket #4713 - requested by hiramatsu
+x11/xproto: packaging fix
+Pullup ticket #4708 - requested by wiz
+x11/sessreg: build fix
+Pullup ticket #4714 - requested by taca
+mail/dovecot2: security fix

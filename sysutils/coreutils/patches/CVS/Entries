@@ -1,0 +1,6 @@
+/patch-Makefile.in/1.2/Tue Feb  4 15:07:46 2014//Tpkgsrc-2015Q1
+/patch-lib-fflush.c/1.2/Sun Feb  2 07:08:25 2014//Tpkgsrc-2015Q1
+/patch-lib-fseeko.c/1.2/Sun Feb  2 07:08:25 2014//Tpkgsrc-2015Q1
+/patch-lib_string.in.h/1.1/Sun Jun 29 06:53:23 2014//Tpkgsrc-2015Q1
+/patch-lib_parse-datetime.c/1.1.2.2/Tue Apr 14 19:04:38 2015//Tpkgsrc-2015Q1
+D

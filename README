@@ -1,0 +1,5 @@
+This is the Beastix ports tree, based upon NetBSD pkgsrc.
+Some parts may be patched in order to operate better on Beastix.
+
+Please ensure you use the correct version for your version of Beastix as future changes may break compatibility.
+The branching policy is the same as that used by the base system, please see releng/README in the base system.
