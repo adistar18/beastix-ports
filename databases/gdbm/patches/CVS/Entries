@@ -1,7 +1,0 @@
-/patch-src_gdbmtool.c/1.1/Fri May 23 20:49:37 2014//Tpkgsrc-2015Q1
-/patch-src_gdbmtool.h/1.1/Fri May 23 20:49:37 2014//Tpkgsrc-2015Q1
-/patch-tests_create00.at/1.1/Fri May 23 20:49:37 2014//Tpkgsrc-2015Q1
-/patch-tests_dbmcreate00.at/1.1/Fri May 23 20:49:37 2014//Tpkgsrc-2015Q1
-/patch-tests_dbmdel00.at/1.1/Fri May 23 20:49:37 2014//Tpkgsrc-2015Q1
-/patch-tests_delete00.at/1.1/Fri May 23 20:49:37 2014//Tpkgsrc-2015Q1
-D
