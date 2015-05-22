@@ -44,7 +44,7 @@ BUILDLINK_TRANSFORM+=	rm:-ffunction-sections
 
 LDFLAGS.DragonFly=	-lplc4 -lnspr4
 LDFLAGS.FreeBSD=	-lplc4 -lnspr4
-LDFLAGS.Linux=		-lnspr4
+LDFLAGS.Linux=		-lplc4 -lnspr4
 
 .include "mozilla-common.mk"
 .include "options.mk"
@@ -67,6 +67,9 @@ SUBST_STAGE.sys-dic=	pre-configure
 SUBST_MESSAGE.sys-dic=	Reference to system hunspell dictionaries.
 SUBST_FILES.sys-dic=	extensions/spellcheck/hunspell/src/mozHunspell.cpp
 SUBST_VARS.sys-dic=	PREFIX
+
+# [Gregor] Fixes for musl
+CONFIGURE_ARGS+=--disable-jemalloc --disable-crashreporter
 
 pre-configure:
 	cd ${WRKSRC} && mkdir ${OBJDIR}

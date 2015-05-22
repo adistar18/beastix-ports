@@ -43,6 +43,7 @@ OPENSSL_MACHINE_ARCH=	${MACHINE_ARCH}
 # back to ./config's autodetection if not.
 .  if defined(OPENSSL_MACHINE_ARCH) && !empty(OPENSSL_MACHINE_ARCH)
 CONFIGURE_SCRIPT=	./Configure
+CONFIGURE_ARGS+=	no-shared no-dso zlib enable-md2 -Wa,--noexecstack
 .    if !empty(CC_VERSION:Mgcc*)
 CONFIGURE_ARGS+=	solaris${${ABI}==64:?64:}-${OPENSSL_MACHINE_ARCH}-gcc
 .    else

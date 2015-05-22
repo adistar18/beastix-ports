@@ -27,6 +27,7 @@ OK
 make: "error" line 3: just FYI
 make: "error" line 4: warning: this could be serious
 make: "error" line 5: this is fatal
+*** Error code 1 (ignored)
 UT_DOLLAR=This is $UT_FU
 UT_FOO=foobar is fubar
 UT_FU=fubar
@@ -46,9 +47,9 @@ UT_ZOO=hoopie
 At first, I am
 happy
 and now: sad
-.ERROR: Looks like 'sad' is upset.
 *** Error code 1
 
+.ERROR: Looks like 'sad' is upset.
 Stop.
 make: stopped in unit-tests
 simple.1
@@ -75,10 +76,10 @@ shared.2.1
 shared.2.1
 shared.2.99
 shared.2.99
+cycle.1.99
 make: Graph cycles through `cycle.2.99'
 make: Graph cycles through `cycle.2.98'
 make: Graph cycles through `cycle.2.97'
-cycle.1.99
 cycle.1.99
 .for with :S;... OK
 b2af338b
@@ -342,5 +343,4 @@ five FU=<v>bar</v> FOO=<v>goo</v> VAR=<v>Internal</v>
 five v=is x k=is x
 six v=is y k=is y
 show-v v=override k=override
-*** Error code 1 (ignored)
 *** Error code 1 (ignored)

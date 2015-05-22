@@ -1,0 +1,70 @@
+diff -r bf00ba1f1322 mkspecs/linux-g++/qplatformdefs.h
+--- mkspecs/linux-g++/qplatformdefs.h	Wed Mar 06 04:21:22 2013 +0000
++++ mkspecs/linux-g++/qplatformdefs.h	Wed Mar 06 05:47:26 2013 +0000
+@@ -86,11 +86,7 @@
+ 
+ #undef QT_SOCKLEN_T
+ 
+-#if defined(__GLIBC__) && (__GLIBC__ >= 2)
+ #define QT_SOCKLEN_T            socklen_t
+-#else
+-#define QT_SOCKLEN_T            int
+-#endif
+ 
+ #if defined(_XOPEN_SOURCE) && (_XOPEN_SOURCE >= 500)
+ #define QT_SNPRINTF		::snprintf
+diff -r bf00ba1f1322 src/3rdparty/clucene/src/CLucene/util/Misc.cpp
+--- src/3rdparty/clucene/src/CLucene/util/Misc.cpp	Wed Mar 06 04:21:22 2013 +0000
++++ src/3rdparty/clucene/src/CLucene/util/Misc.cpp	Wed Mar 06 05:47:26 2013 +0000
+@@ -20,6 +20,7 @@
+ # endif
+ #endif
+ 
++#undef _CL_HAVE_SYS_TIMEB_H
+ #ifdef _CL_HAVE_SYS_TIMEB_H
+ # include <sys/timeb.h>
+ #endif
+diff -r bf00ba1f1322 src/3rdparty/javascriptcore/JavaScriptCore/wtf/Platform.h
+--- src/3rdparty/javascriptcore/JavaScriptCore/wtf/Platform.h	Wed Mar 06 04:21:22 2013 +0000
++++ src/3rdparty/javascriptcore/JavaScriptCore/wtf/Platform.h	Wed Mar 06 05:47:26 2013 +0000
+@@ -711,8 +711,10 @@
+ #if !OS(WINDOWS) && !OS(SOLARIS) && !OS(QNX) \
+     && !OS(SYMBIAN) && !OS(HAIKU) && !OS(RVCT) \
+     && !OS(ANDROID) && !OS(AIX) && !OS(HPUX)
++#if !defined(__linux__) || defined(__GLIBC__)
+ #define HAVE_TM_GMTOFF 1
+ #define HAVE_TM_ZONE 1
++#endif
+ #define HAVE_TIMEGM 1
+ #endif
+ 
+diff -r bf00ba1f1322 src/3rdparty/webkit/Source/JavaScriptCore/wtf/Platform.h
+--- src/3rdparty/webkit/Source/JavaScriptCore/wtf/Platform.h	Wed Mar 06 04:21:22 2013 +0000
++++ src/3rdparty/webkit/Source/JavaScriptCore/wtf/Platform.h	Wed Mar 06 05:47:26 2013 +0000
+@@ -582,8 +582,10 @@
+ #endif
+ 
+ #if (PLATFORM(GTK) || PLATFORM(IOS) || PLATFORM(MAC) || PLATFORM(WIN) || (PLATFORM(QT) && (OS(DARWIN) || USE(PTHREAD_BASED_QT)) && !ENABLE(SINGLE_THREADED))) && !OS(QNX) && !defined(ENABLE_JSC_MULTIPLE_THREADS)
++#if 1
+ #define ENABLE_JSC_MULTIPLE_THREADS 1
+ #endif
++#endif
+ 
+ #if ENABLE(JSC_MULTIPLE_THREADS)
+ #define ENABLE_WTF_MULTIPLE_THREADS 1
+@@ -766,11 +768,13 @@
+ #endif
+ #endif
+ 
++#if defined(__GLIBC__)
++#define HAVE_TM_GMTOFF 1
++#define HAVE_TM_ZONE 1
++#endif
+ #if !OS(WINDOWS) && !OS(SOLARIS) && !OS(QNX) \
+     && !OS(SYMBIAN) && !OS(HAIKU) && !OS(RVCT) \
+     && !OS(ANDROID) && !PLATFORM(BREWMP)
+-#define HAVE_TM_GMTOFF 1
+-#define HAVE_TM_ZONE 1
+ #define HAVE_TIMEGM 1
+ #endif
+ 

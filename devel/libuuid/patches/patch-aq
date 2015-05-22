@@ -1,0 +1,56 @@
+diff -r f3d747a80d82 shlibs/uuid/src/Makefile.am
+--- shlibs/uuid/src/Makefile.am	Sun May 06 03:03:55 2012 +0000
++++ shlibs/uuid/src/Makefile.am	Sun May 06 03:04:28 2012 +0000
+@@ -25,15 +25,15 @@
+ 
+ # move lib from $(usrlib_execdir) to $(libdir) if needed
+ install-exec-hook:
+-	if test "$(usrlib_execdir)" != "$(libdir)"; then \
+-		mkdir -p $(DESTDIR)$(libdir); \
+-		mv $(DESTDIR)$(usrlib_execdir)/libuuid.so.* $(DESTDIR)$(libdir); \
+-		so_img_name=$$(readlink $(DESTDIR)$(usrlib_execdir)/libuuid.so); \
+-		so_img_rel_target=$$(echo $(usrlib_execdir) | sed 's,\(^/\|\)[^/][^/]*,..,g'); \
+-		(cd $(DESTDIR)$(usrlib_execdir) && \
+-			rm -f libuuid.so && \
+-			$(LN_S) $$so_img_rel_target$(libdir)/$$so_img_name libuuid.so); \
+-	fi
++#	if test "$(usrlib_execdir)" != "$(libdir)"; then \
++#		mkdir -p $(DESTDIR)$(libdir); \
++#		mv $(DESTDIR)$(usrlib_execdir)/libuuid.so.* $(DESTDIR)$(libdir); \
++#		so_img_name=$$(readlink $(DESTDIR)$(usrlib_execdir)/libuuid.so); \
++#		so_img_rel_target=$$(echo $(usrlib_execdir) | sed 's,\(^/\|\)[^/][^/]*,..,g'); \
++#		(cd $(DESTDIR)$(usrlib_execdir) && \
++#			rm -f libuuid.so && \
++#			$(LN_S) $$so_img_rel_target$(libdir)/$$so_img_name libuuid.so); \
++#	fi
+ 
+ uninstall-hook:
+ 	rm -f $(DESTDIR)$(libdir)/libuuid.so*
+diff -r f3d747a80d82 shlibs/uuid/src/Makefile.in
+--- shlibs/uuid/src/Makefile.in	Sun May 06 03:03:55 2012 +0000
++++ shlibs/uuid/src/Makefile.in	Sun May 06 03:04:28 2012 +0000
+@@ -700,15 +700,15 @@
+ 
+ # move lib from $(usrlib_execdir) to $(libdir) if needed
+ install-exec-hook:
+-	if test "$(usrlib_execdir)" != "$(libdir)"; then \
+-		mkdir -p $(DESTDIR)$(libdir); \
+-		mv $(DESTDIR)$(usrlib_execdir)/libuuid.so.* $(DESTDIR)$(libdir); \
+-		so_img_name=$$(readlink $(DESTDIR)$(usrlib_execdir)/libuuid.so); \
+-		so_img_rel_target=$$(echo $(usrlib_execdir) | sed 's,\(^/\|\)[^/][^/]*,..,g'); \
+-		(cd $(DESTDIR)$(usrlib_execdir) && \
+-			rm -f libuuid.so && \
+-			$(LN_S) $$so_img_rel_target$(libdir)/$$so_img_name libuuid.so); \
+-	fi
++#	if test "$(usrlib_execdir)" != "$(libdir)"; then \
++#		mkdir -p $(DESTDIR)$(libdir); \
++#		mv $(DESTDIR)$(usrlib_execdir)/libuuid.so.* $(DESTDIR)$(libdir); \
++#		so_img_name=$$(readlink $(DESTDIR)$(usrlib_execdir)/libuuid.so); \
++#		so_img_rel_target=$$(echo $(usrlib_execdir) | sed 's,\(^/\|\)[^/][^/]*,..,g'); \
++#		(cd $(DESTDIR)$(usrlib_execdir) && \
++#			rm -f libuuid.so && \
++#			$(LN_S) $$so_img_rel_target$(libdir)/$$so_img_name libuuid.so); \
++#	fi
+ 
+ uninstall-hook:
+ 	rm -f $(DESTDIR)$(libdir)/libuuid.so*

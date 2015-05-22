@@ -1,0 +1,48 @@
+diff -r 89442310b346 examples/interrupted_client.c
+--- examples/interrupted_client.c	Mon Jul 02 16:31:43 2012 +0000
++++ examples/interrupted_client.c	Mon Jul 02 16:34:32 2012 +0000
+@@ -2,6 +2,8 @@
+    both by timeout and by control-C.
+ */
+ 
++#define _GNU_SOURCE
++
+ #include <stdlib.h>
+ #include <unistd.h>
+ #include <stdio.h>
+diff -r 89442310b346 examples/interrupted_server.c
+--- examples/interrupted_server.c	Mon Jul 02 16:31:43 2012 +0000
++++ examples/interrupted_server.c	Mon Jul 02 16:34:32 2012 +0000
+@@ -7,6 +7,8 @@
+    simpler code, but it is not interruptible with SIGTERM.
+ */
+ 
++#define _GNU_SOURCE
++
+ #include <stdlib.h>
+ #include <stdio.h>
+ #include <signal.h>
+diff -r 89442310b346 examples/xmlrpc_inetd_server.c
+--- examples/xmlrpc_inetd_server.c	Mon Jul 02 16:31:43 2012 +0000
++++ examples/xmlrpc_inetd_server.c	Mon Jul 02 16:34:32 2012 +0000
+@@ -21,6 +21,8 @@
+    respond to the client, then exit.
+ */
+ 
++#define _GNU_SOURCE
++
+ #include <stdlib.h>
+ #include <stdio.h>
+ #include <signal.h>
+diff -r 89442310b346 examples/xmlrpc_loop_server.c
+--- examples/xmlrpc_loop_server.c	Mon Jul 02 16:31:43 2012 +0000
++++ examples/xmlrpc_loop_server.c	Mon Jul 02 16:34:32 2012 +0000
+@@ -6,6 +6,8 @@
+    less control over how the requests are served.
+ */
+ 
++#define _GNU_SOURCE
++
+ #include <stdlib.h>
+ #include <stdio.h>
+ #include <signal.h>

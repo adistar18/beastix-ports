@@ -14,4 +14,6 @@ GNU_CONFIGURE=		yes
 USE_TOOLS+=		gmake
 PKG_SHELL=		bin/dash
 
+CONFIGURE_ARGS+=	CFLAGS="-O2 -g -DEXECCMD=1 -DCOMMANDCMD=2"
+
 .include "../../mk/bsd.pkg.mk"

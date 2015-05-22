@@ -1,0 +1,25 @@
+diff -r 51a31ec23212 get_rload.c
+--- get_rload.c	Sat Aug 11 06:34:00 2012 +0000
++++ get_rload.c	Sat Aug 11 06:36:34 2012 +0000
+@@ -9,7 +9,7 @@
+ /* Not all OS supports get_rload
+    steal the STUB idea from get_load
+  */
+-#if defined(QNX4) || defined(__CYGWIN__)
++#if defined(QNX4) || defined(__CYGWIN__) || 1
+ #define RLOADSTUB
+ #endif
+ 
+diff -r 51a31ec23212 xload.c
+--- xload.c	Sat Aug 11 06:34:00 2012 +0000
++++ xload.c	Sat Aug 11 06:36:34 2012 +0000
+@@ -77,7 +77,9 @@
+ 
+ #ifdef USE_GETTEXT
+ # include <X11/Xlocale.h>
++#if 0
+ # include <libintl.h>
++#endif
+ #else
+ # define gettext(a) (a)
+ #endif

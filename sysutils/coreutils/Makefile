@@ -65,6 +65,8 @@ post-install:
 #MESSAGE_SUBST+=	OPSYS=${OPSYS:Q}
 #.endif
 
+CFLAGS+=		-DSLOW_BUT_NO_HACKS
+
 .include "../../converters/libiconv/buildlink3.mk"
 .include "../../devel/gettext-lib/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

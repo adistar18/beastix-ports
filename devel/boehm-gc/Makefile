@@ -27,6 +27,9 @@ TEST_TARGET=		check
 CFLAGS+=		-D_XOPEN_SOURCE
 .endif
 
+# [Gregor] Without this, needs libc-specific data in (glibc) link.h
+CFLAGS+=	-DUSE_PROC_FOR_LIBRARIES -DNO_GETCONTEXT
+
 .include "options.mk"
 
 # https://github.com/ivmai/bdwgc/issues/65

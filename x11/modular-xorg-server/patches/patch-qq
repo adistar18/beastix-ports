@@ -1,0 +1,27 @@
+diff -r 9da799702a4b hw/xfree86/common/xf86Init.c
+--- hw/xfree86/common/xf86Init.c	Wed Jul 31 13:10:46 2013 +0000
++++ hw/xfree86/common/xf86Init.c	Wed Jul 31 13:42:05 2013 +0000
+@@ -29,6 +29,8 @@
+  * the sale, use or other dealings in this Software without prior written
+  * authorization from the copyright holder(s) and author(s).
+  */
++ 
++#define _GNU_SOURCE /* for getres[ug]id */
+ 
+ #ifdef HAVE_XORG_CONFIG_H
+ #include <xorg-config.h>
+diff -r 9da799702a4b hw/xfree86/os-support/xf86_OSlib.h
+--- hw/xfree86/os-support/xf86_OSlib.h	Wed Jul 31 13:10:46 2013 +0000
++++ hw/xfree86/os-support/xf86_OSlib.h	Wed Jul 31 13:42:05 2013 +0000
+@@ -178,11 +178,7 @@
+ #include <sys/types.h>
+ #include <assert.h>
+ 
+-#ifdef __linux__
+-#include <termio.h>
+-#else                           /* __GLIBC__ */
+ #include <termios.h>
+-#endif
+ #ifdef __sparc__
+ #include <sys/param.h>
+ #endif

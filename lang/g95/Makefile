@@ -33,6 +33,10 @@ GCC_CONFIGURE_ARGS+=	--disable-libssp # to build on NetBSD 6.88.43
 # Avoid "ld: illegal text-relocation to half in .libs/x87.o"
 LDFLAGS.Darwin+=	-Wl,-read_only_relocs,suppress
 
+# [Gregor] No mudflap or libssp on musl
+GCC_CONFIGURE_ARGS+=	--disable-libmudflap --disable-libssp
+LIBS+=			-liconv
+
 .include "../../mk/bsd.prefs.mk"
 .if ${OPSYS} == "SunOS"
 GCC_CONFIGURE_ENV+=	OBJDUMP=/usr/sfw/bin/gobjdump
@@ -67,4 +71,8 @@ post-install:
 	cd ${DESTDIR}${PREFIX}/bin && ${LN} -sf ${MACHINE_GNU_PLATFORM:Q}-g95 g95
 	cd ${DESTDIR}${PREFIX}/bin && ${LN} -sf ${MACHINE_GNU_PLATFORM:Q}-g95 f95
 
+.include "../../converters/libiconv/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
+
+# [Gregor] Compilers need to know their target
+MACHINE_GNU_PLATFORM=${MACHINE_GNU_ARCH}-${LOWER_VENDOR}-${LOWER_OPSYS:C/[0-9]//g}-musl${APPEND_ELF}${LOWER_OPSYS_VERSUFFIX}

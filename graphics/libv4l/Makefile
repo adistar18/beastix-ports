@@ -29,8 +29,9 @@ post-install:
 	${INSTALL_DATA} ${FILESDIR}/videoio.h ${DESTDIR}${PREFIX}/include/sys
 .elif !exists(/usr/include/linux/videodev.h)
 pre-configure:
-	${MKDIR} ${BUILDLINK_DIR}/include
+	${MKDIR} ${BUILDLINK_DIR}/include/linux
 	cp ${FILESDIR}/videodev.h ${BUILDLINK_DIR}/include/videodev.h
+	cp ${FILESDIR}/videodev.h ${BUILDLINK_DIR}/include/linux/videodev.h
 .endif
 
 PLIST_VARS=	needs_videoio

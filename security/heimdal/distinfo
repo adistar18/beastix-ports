@@ -17,4 +17,5 @@ SHA1 (patch-lib_libedit_configure.ac) = 588b184615a80ab85d7c3624c6c05860c8e6feb0
 SHA1 (patch-lib_libedit_src_unvis.c) = 117c91ead1ca94aaed38c2d0611588fec6746d61
 SHA1 (patch-lib_libedit_src_vis.c) = ade98e513187c3fa03194909409a9bb23f66509a
 SHA1 (patch-lib_otp_Makefile.in) = 0fe1426000824614f0e31d3ab2348948f3f414d3
+SHA1 (patch-qq) = 3a0461411d81dd0a55db54532594febf609e56ac
 SHA1 (patch-lib_roken_vis.c) = 8037c4b36d6cd4bc2557a9409df04232276b7a28

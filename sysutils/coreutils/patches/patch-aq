@@ -1,0 +1,23 @@
+diff -r fb0a1c120d18 lib/fseterr.c
+--- lib/fseterr.c	Sat May 05 16:00:33 2012 +0000
++++ lib/fseterr.c	Sat May 05 16:05:52 2012 +0000
+@@ -71,6 +71,6 @@
+     }
+   errno = saved_errno;
+ #else
+- #error "Please port gnulib fseterr.c to your platform! Look at the definitions of ferror and clearerr on your system, then report this to bug-gnulib."
++  return 1;
+ #endif
+ }
+diff -r fb0a1c120d18 src/dd.c
+--- src/dd.c	Sat May 05 16:00:33 2012 +0000
++++ src/dd.c	Sat May 05 16:05:52 2012 +0000
+@@ -1375,7 +1375,7 @@
+    The offending behavior has been confirmed with an Exabyte SCSI tape
+    drive accessed via /dev/nst0 on both Linux 2.2.17 and 2.4.16 kernels.  */
+ 
+-#ifdef __linux__
++#if 0
+ 
+ # include <sys/mtio.h>
+ 

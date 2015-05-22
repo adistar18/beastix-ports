@@ -55,5 +55,8 @@ ALTERNATIVES_SRC=	${.CURDIR}/../../editors/vim-share/ALTERNATIVES
 ALTERNATIVES_SRC=
 .endif
 
+# [Gregor] vim doesn't recognize that it needs curses to build ANYTHING, even the share component
+.include "../../mk/curses.buildlink3.mk"
+
 post-patch:
 	find ${WRKDIR} -name '*.orig_dist' -exec rm -f {} \;

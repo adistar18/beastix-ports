@@ -1,0 +1,15 @@
+diff -r 168721ec2b30 sysdep1.h0
+--- sysdep1.h0	Mon Mar 11 19:39:44 2013 +0000
++++ sysdep1.h0	Mon Mar 11 19:42:49 2013 +0000
+@@ -10,7 +10,11 @@
+ 
+ #ifdef __linux__
+ #define USE_LARGEFILE
++#ifdef __GLIBC__
+ #define OFF_T __off64_t
++#else
++#define OFF_T off_t
++#endif
+ #endif
+ 
+ #ifdef _AIX43

@@ -129,8 +129,6 @@ include/xorg/windowstr.h
 include/xorg/xaarop.h
 include/xorg/xaa.h
 include/xorg/xaalocal.h
-include/xorg/xace.h
-include/xorg/xacestr.h
 include/xorg/xf86.h
 include/xorg/xf86Crtc.h
 include/xorg/xf86Cursor.h

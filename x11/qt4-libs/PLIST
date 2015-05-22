@@ -46,10 +46,6 @@ qt4/plugins/accessible/libqtaccessiblecompatwidgets.la
 qt4/plugins/accessible/libqtaccessiblewidgets.la
 ${PLIST.mac}qt4/plugins/bearer/libqcorewlanbearer.la
 qt4/plugins/bearer/libqgenericbearer.la
-qt4/plugins/codecs/libqcncodecs.la
-qt4/plugins/codecs/libqjpcodecs.la
-qt4/plugins/codecs/libqkrcodecs.la
-qt4/plugins/codecs/libqtwcodecs.la
 qt4/plugins/graphicssystems/libqglgraphicssystem.la
 qt4/plugins/graphicssystems/libqtracegraphicssystem.la
 qt4/plugins/iconengines/libqsvgicon.la

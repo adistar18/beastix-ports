@@ -1,0 +1,51 @@
+--- pty-redir.c
++++ pty-redir.c
+@@ -43,30 +43,18 @@
+ #include <fcntl.h>
+ 
+ 
+-#define PTY00 "/dev/ptyXX"
+-#define PTY10 "pqrs"
+-#define PTY01 "0123456789abcdef"
++#define PTY00 "/dev/ptmx"
+ 
+ static int
+ getPtyMaster(char *tty10, char *tty01)
+ {
+-    char *p10;
+-    char *p01;
+     static char dev[] = PTY00;
+     int fd;
+ 
+-    for (p10 = PTY10; *p10 != '\0'; p10++) {
+-        dev[8] = *p10;
+-        for (p01 = PTY01; *p01 != '\0'; p01++) {
+-            dev[9] = *p01;
+             fd = open(dev, O_RDWR);
+             if (fd >= 0) {
+-                *tty10 = *p10;
+-                *tty01 = *p01;
+                 return fd;
+             }
+-        }
+-    }
+     fprintf(stderr,"Ran out of pty.\n");
+     exit(1);
+     return fd;
+@@ -81,8 +69,6 @@
+ 	int i;
+ 	
+ 	fd=getPtyMaster(&a,&b);
+-	fprintf(stdout,"/dev/tty%c%c",a,b);
+-	fflush(stdout);
+ 	if(NULL==(args=malloc((argc)*sizeof(char *))))
+ 	{
+ 		fprintf(stderr,"Virtual memory exhausted\n");
+@@ -95,7 +81,6 @@
+ 	args[argc-1]=NULL; /*End of params*/
+ 	dup2(fd,0);
+ 	dup2(fd,1);
+-	fflush(NULL);
+ 	if(fork())
+ 	{
+ 		exit(0);

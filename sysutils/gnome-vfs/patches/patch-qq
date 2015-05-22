@@ -1,0 +1,13 @@
+diff -r d1cf86f18da9 libgnomevfs/gnome-vfs-result.c
+--- libgnomevfs/gnome-vfs-result.c	Mon Mar 11 18:50:48 2013 +0000
++++ libgnomevfs/gnome-vfs-result.c	Mon Mar 11 19:06:41 2013 +0000
+@@ -199,7 +199,9 @@
+ {
+ 	switch (h_errno_code) {
+ 	case HOST_NOT_FOUND:	return GNOME_VFS_ERROR_HOST_NOT_FOUND;
++#ifdef NO_ADDRESS	
+ 	case NO_ADDRESS:	return GNOME_VFS_ERROR_HOST_HAS_NO_ADDRESS;
++#endif
+ 	case TRY_AGAIN:		return GNOME_VFS_ERROR_NAMESERVER;
+ 	case NO_RECOVERY:	return GNOME_VFS_ERROR_NAMESERVER;
+ 	default:

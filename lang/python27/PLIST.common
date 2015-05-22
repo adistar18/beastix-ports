@@ -1906,7 +1906,6 @@ lib/python${PY_VER_SUFFIX}/lib-dynload/_multibytecodec.so
 lib/python${PY_VER_SUFFIX}/lib-dynload/_multiprocessing.so
 lib/python${PY_VER_SUFFIX}/lib-dynload/_random.so
 lib/python${PY_VER_SUFFIX}/lib-dynload/_socket.so
-lib/python${PY_VER_SUFFIX}/lib-dynload/_ssl.so
 lib/python${PY_VER_SUFFIX}/lib-dynload/_struct.so
 lib/python${PY_VER_SUFFIX}/lib-dynload/_testcapi.so
 lib/python${PY_VER_SUFFIX}/lib-dynload/array.so
@@ -1928,7 +1927,6 @@ ${PLIST.extra-so}lib/python${PY_VER_SUFFIX}/lib-dynload/imageop.so
 lib/python${PY_VER_SUFFIX}/lib-dynload/itertools.so
 lib/python${PY_VER_SUFFIX}/lib-dynload/math.so
 lib/python${PY_VER_SUFFIX}/lib-dynload/mmap.so
-${PLIST.nis}lib/python${PY_VER_SUFFIX}/lib-dynload/nis.so
 ${PLIST.no-nis}lib/python${PY_VER_SUFFIX}/lib-dynload/nis_failed.so
 lib/python${PY_VER_SUFFIX}/lib-dynload/operator.so
 lib/python${PY_VER_SUFFIX}/lib-dynload/parser.so

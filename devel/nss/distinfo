@@ -15,3 +15,4 @@ SHA1 (patch-mn) = ab5820ecca7e1a3aef7785763115d38fa55109b4
 SHA1 (patch-nss_coreconf_OpenBSD.mk) = fa545c993038e99bf9f59b59ec1d0bd1f6c192a9
 SHA1 (patch-nss_lib_freebl_config.mk) = 1c198177da8ba7928cbfbd23e385503be99ebe27
 SHA1 (patch-security_nss_cmd_shlibsign_sign.sh) = 7948b7b502a4c148ee185836dde8a84d3aa388af
+SHA1 (patch-zz-cdefs) = 3d0d719b1bf9fbc9a854fcbc258660a46df4a57f

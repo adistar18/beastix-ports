@@ -1,0 +1,12 @@
+diff -r 0a1c1f54695a mozilla/dbm/include/mcom_db.h
+--- dbm/include/mcom_db.h	Thu Aug 01 14:54:49 2013 +0000
++++ dbm/include/mcom_db.h	Thu Aug 01 14:55:08 2013 +0000
+@@ -44,7 +44,7 @@
+ 
+ #ifdef __DBINTERFACE_PRIVATE
+ 
+-#ifdef HAVE_SYS_CDEFS_H
++#if 0
+ #include <sys/cdefs.h>
+ #else
+ #include "cdefs.h"

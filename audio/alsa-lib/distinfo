@@ -46,6 +46,7 @@ SHA1 (patch-include_sound_asound.h) = 456b8545668294d38a83e98818d76bd2f717df75
 SHA1 (patch-src_compat_hsearch__r.c) = 017bf104203233e85e9f3083f43150de6f341ad5
 SHA1 (patch-src_conf.c) = 43e35f6a133cf297d3309bc8c4846beb295e5242
 SHA1 (patch-src_control_control__hw.c) = 07cfe3abe586b32f6b989403cd162599da07e865
+SHA1 (patch-qq) = a41ef5695898cde72f31489de2ed10088b0f476f
 SHA1 (patch-src_pcm_pcm__mmap.c) = 8ce33dae5215ee441196414e0c1ba02e4757e32d
 SHA1 (patch-src_seq_seq__midi__event.c) = 2a5de492d6ca19a0f0c564e8f5a065e5fc57ea5c
 SHA1 (patch-src_shmarea.c) = e6da001119f4e164b606e19a4c12df9aa05caa6a

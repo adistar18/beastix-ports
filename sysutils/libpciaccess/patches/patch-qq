@@ -1,0 +1,23 @@
+diff -r 4ecbc201fcdd src/linux_sysfs.c
+--- src/linux_sysfs.c	Mon Mar 11 04:36:42 2013 +0000
++++ src/linux_sysfs.c	Mon Mar 11 04:40:52 2013 +0000
+@@ -44,6 +44,7 @@
+ #include <sys/mman.h>
+ #include <dirent.h>
+ #include <errno.h>
++#include <limits.h>
+ 
+ #if defined(__i386__) || defined(__x86_64__) || defined(__arm__)
+ #include <sys/io.h>
+diff -r 4ecbc201fcdd src/pciaccess_private.h
+--- src/pciaccess_private.h	Mon Mar 11 04:36:42 2013 +0000
++++ src/pciaccess_private.h	Mon Mar 11 04:40:52 2013 +0000
+@@ -42,7 +42,7 @@
+  * know of any OS we support where this isn't available in a sufficiently
+  * new version, so warn unconditionally.
+  */
+-#include <sys/fcntl.h>
++#include <fcntl.h>
+ 
+ #ifndef O_CLOEXEC
+ #warning O_CLOEXEC not available, please upgrade.

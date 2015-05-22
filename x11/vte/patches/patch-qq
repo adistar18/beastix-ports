@@ -1,0 +1,28 @@
+diff -r af9a009fcb7c src/pty.c
+--- src/pty.c	Thu Nov 22 04:46:24 2012 +0000
++++ src/pty.c	Thu Nov 22 04:50:45 2012 +0000
+@@ -28,6 +28,8 @@
+  * Since: 0.26
+  */
+ 
++#define _GNU_SOURCE /* for ptsname_r */
++
+ #include <config.h>
+ 
+ #include "vtepty.h"
+@@ -290,6 +292,7 @@
+ #endif
+ 
+ #ifdef HAVE_STROPTS_H
++#if 0
+ 	if (isastream (fd) == 1) {
+ 		if ((ioctl(fd, I_FIND, "ptem") == 0) &&
+ 				(ioctl(fd, I_PUSH, "ptem") == -1)) {
+@@ -306,6 +309,7 @@
+ 		}
+ 	}
+ #endif
++#endif
+ 
+ 	/* now setup child I/O through the tty */
+ 	if (fd != STDIN_FILENO) {

@@ -192,4 +192,7 @@ post-install:
 	  ${DESTDIR}${EGDIR}/sshd.pam
 .endif
 
+# [Gregor] misdetection 
+CONFIGURE_ARGS+=--without-stackprotect
+
 .include "../../mk/bsd.pkg.mk"

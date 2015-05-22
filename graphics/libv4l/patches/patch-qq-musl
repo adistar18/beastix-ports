@@ -1,0 +1,80 @@
+diff -r 98d97d46842a include/libv4l2.h
+--- include/libv4l2.h	Thu Aug 01 15:58:22 2013 +0000
++++ include/libv4l2.h	Thu Aug 01 15:59:11 2013 +0000
+@@ -32,6 +32,10 @@
+ typedef off_t __off64_t;
+ #endif
+ typedef off_t __off_t;
++#elif defined(__GLIBC__)
++#elif 1
++typedef off_t __off_t;
++typedef off_t __off64_t;
+ #endif
+ 
+ #ifdef __cplusplus
+diff -r 98d97d46842a libv4l1/v4l1compat.c
+--- libv4l1/v4l1compat.c	Thu Aug 01 15:58:22 2013 +0000
++++ libv4l1/v4l1compat.c	Thu Aug 01 15:59:11 2013 +0000
+@@ -65,7 +65,7 @@
+   return fd;
+ }
+ 
+-#if !(defined(__sun) && defined(_LP64))
++#if !(defined(__sun) && defined(_LP64)) && 0
+ LIBV4L_PUBLIC int open64 (const char *file, int oflag, ...)
+ {
+   int fd;
+@@ -97,7 +97,7 @@
+   return v4l1_dup(fd);
+ }
+ 
+-LIBV4L_PUBLIC int ioctl (int fd, unsigned long int request, ...)
++LIBV4L_PUBLIC int ioctl (int fd, int request, ...)
+ {
+   void *arg;
+   va_list ap;
+@@ -115,12 +115,12 @@
+ }
+ 
+ LIBV4L_PUBLIC void *mmap(void *start, size_t length, int prot, int flags, int fd,
+-  __off_t offset)
++  off_t offset)
+ {
+   return v4l1_mmap(start, length, prot, flags, fd, offset);
+ }
+ 
+-#if !(defined(__sun) && defined(_LP64))
++#if !(defined(__sun) && defined(_LP64)) && 0
+ LIBV4L_PUBLIC void *mmap64(void *start, size_t length, int prot, int flags, int fd,
+   __off64_t offset)
+ {
+diff -r 98d97d46842a libv4l2/v4l2convert.c
+--- libv4l2/v4l2convert.c	Thu Aug 01 15:58:22 2013 +0000
++++ libv4l2/v4l2convert.c	Thu Aug 01 15:59:11 2013 +0000
+@@ -111,7 +111,7 @@
+   return fd;
+ }
+ 
+-#if !(defined(__sun) && defined(_LP64))
++#if !(defined(__sun) && defined(_LP64)) && 0
+ LIBV4L_PUBLIC int open64(const char *file, int oflag, ...)
+ {
+   int fd;
+@@ -146,7 +146,7 @@
+   return v4l2_dup(fd);
+ }
+ 
+-LIBV4L_PUBLIC int ioctl (int fd, unsigned long int request, ...)
++LIBV4L_PUBLIC int ioctl (int fd, int request, ...)
+ {
+   void *arg;
+   va_list ap;
+@@ -169,7 +169,7 @@
+   return v4l2_mmap(start, length, prot, flags, fd, offset);
+ }
+ 
+-#if !(defined(__sun) && defined(_LP64))
++#if !(defined(__sun) && defined(_LP64)) && 0
+ LIBV4L_PUBLIC void *mmap64(void *start, size_t length, int prot, int flags, int fd,
+   __off64_t offset)
+ {

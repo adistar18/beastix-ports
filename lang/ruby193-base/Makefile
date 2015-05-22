@@ -175,6 +175,13 @@ post-install:
 		${DESTDIR}${PREFIX}/${RUBY_EG}/openssl
 .endfor
 	${RUBY_GENERATE_PLIST}
+	
+# [Gregor] docs fail for unknown reasons
+CONFIGURE_ARGS+=	--disable-install-doc
+CONFIGURE_ENV+=	LDSHARED="${CC} -shared"
+
+# [Gregor] bug with dln.o
+CFLAGS+=-fPIC
 
 .include "../../mk/bdb.buildlink3.mk"
 .include "../../converters/libiconv/buildlink3.mk"

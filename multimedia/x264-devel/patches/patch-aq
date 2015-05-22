@@ -1,0 +1,21 @@
+diff -r 95a6fda9df62 common/cpu.c
+--- common/cpu.c	Wed Aug 15 18:41:02 2012 +0000
++++ common/cpu.c	Wed Aug 15 18:47:32 2012 +0000
+@@ -378,6 +378,7 @@
+     return sysconf( _SC_NPROCESSORS_ONLN );
+ 
+ #elif SYS_LINUX
++#if 0
+     cpu_set_t p_aff;
+     memset( &p_aff, 0, sizeof(p_aff) );
+     if( sched_getaffinity( 0, sizeof(p_aff), &p_aff ) )
+@@ -390,6 +391,9 @@
+         np += (((uint8_t *)&p_aff)[bit / 8] >> (bit % 8)) & 1;
+     return np;
+ #endif
++#else
++    return 1;
++#endif
+ 
+ #elif SYS_BEOS
+     system_info info;

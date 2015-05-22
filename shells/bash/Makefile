@@ -103,6 +103,9 @@ CONFIGURE_ENV+=		bash_cv_wexitstatus_offset=8
 pre-configure:
 	${RM} -f ${WRKSRC}/y.tab.c
 
+# [Gregor] mischeck for musl, safe everywhere
+CONFIGURE_ARGS+=		--without-bash-malloc
+
 post-install:
 	${INSTALL_MAN} ${WRKSRC}/doc/bash.1 ${DESTDIR}${PREFIX}/${PKGMANDIR}/man1
 	${INSTALL_MAN} ${WRKSRC}/doc/bashbug.1 ${DESTDIR}${PREFIX}/${PKGMANDIR}/man1

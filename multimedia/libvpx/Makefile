@@ -90,6 +90,9 @@ CONFIGURE_ARGS+=	--target=x86-solaris-gcc
 .  endif
 .endif
 
+# [Gregor] bash script
+BUILD_DEPENDS+=bash-[0-9]*:../../shells/bash
+
 .include "../../mk/compiler.mk"
 .if !empty(PKGSRC_COMPILER:Mclang)
 CXXFLAGS+=	-std=c++11

@@ -61,6 +61,12 @@ CONFIGURE_ENV+=	LIBS_SSP=${LIBS_SSP:M*:Q}
 .endif
 LIBS+=			${BUILDLINK_LDADD.iconv}
 
+# [Gregor] Seems to be necessary on musl too
+LIBS+=		-liconv
+
+# [Gregor] Needs strl* functions, but excludes them
+CFLAGS+=	-D_BSD_SOURCE
+
 PLIST_VARS+=		notmac
 .if ${OPSYS} != "Darwin"
 PLIST.notmac=		yes

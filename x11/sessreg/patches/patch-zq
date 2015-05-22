@@ -1,0 +1,25 @@
+diff -r 4fdc7ea325ec sessreg.c
+--- sessreg.c	Mon Aug 06 21:31:43 2012 +0000
++++ sessreg.c	Mon Aug 06 21:33:44 2012 +0000
+@@ -99,10 +99,10 @@
+ static const char *utmpx_file = NULL;
+ #endif
+ #endif
+-#ifndef WTMPX_FILE
++#if !defined(WTMPX_FILE) && defined(_PATH_WTMPX)
+ #define WTMPX_FILE	_PATH_WTMPX
+ #endif
+-#ifndef UTMPX_FILE
++#if !defined(UTMPX_FILE) && defined(_PATH_UTMPX)
+ #define UTMPX_FILE	_PATH_UTMPX
+ #endif
+ 
+@@ -260,7 +260,7 @@
+ 	/* set up default file names */
+ 	if (!wflag) {
+ 		wtmp_file = WTMP_FILE;
+-#if defined(USE_UTMPX) && defined(HAVE_UPDWTMPX)
++#if defined(USE_UTMPX) && defined(HAVE_UPDWTMPX) && defined(WTMPX_FILE)
+ 		wtmpx_file = WTMPX_FILE;
+ #endif
+ 	}

@@ -1,0 +1,11 @@
+diff -r f88137634fb9 tdb/tdb.h
+--- tdb/tdb.h	Sun May 06 09:10:30 2012 +0000
++++ tdb/tdb.h	Sun May 06 11:32:55 2012 +0000
+@@ -29,6 +29,7 @@
+ 
+ #include <signal.h>
+ #include <unistd.h>
++#include <sys/types.h>
+ 
+ #ifdef  __cplusplus
+ extern "C" {

@@ -7,3 +7,4 @@ SHA1 (patch-bin_openpam__dump__policy_openpam__dump__policy.c) = 8485ecba73ec4f1
 SHA1 (patch-lib_libpam_openpam__configure.c) = 0d2d6b3bcb4ab86b253fbe13c751e8c5c8607ee0
 SHA1 (patch-lib_libpam_openpam__constants.c) = 7dd63e288408939a73057b3e4d90382983c1d559
 SHA1 (patch-lib_libpam_openpam__ctype.h) = 14866f4cfbdd5c6f67f97d4f3755a4e80782cce0
+SHA1 (patch-aq) = b8310fd7a88d4a6703ac5b724e5ca1406337b5d1

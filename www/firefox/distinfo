@@ -177,3 +177,4 @@ SHA1 (patch-xpcom_reflect_xptcall_md_unix_xptcstubs__asm__sparc64__netbsd.s) = 5
 SHA1 (patch-xpcom_reflect_xptcall_md_unix_xptcstubs__gcc__x86__unix.cpp) = d246f0695eb43d43bfd5571297945a4b7a88f72c
 SHA1 (patch-xpcom_reflect_xptcall_md_unix_xptcstubs__netbsd__m68k.cpp) = 75db49c9cb6bf2993afba82b731d80389d866212
 SHA1 (patch-xulrunner_installer_Makefile.in) = 9d32ff87d0962c0406ed38de995c0350dd372e49
+SHA1 (patch-zqq) = 1ce0da5c533bd23e86e5f2932a2dbb57869985dd

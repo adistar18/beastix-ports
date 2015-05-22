@@ -96,13 +96,13 @@ call_useradd()
 	case $userid in
 	"")
 		${USERADD}					\
-			-r -c "$descr" -d "$home" -s "$shell"	\
-			-g $group $user "$@"
+			-D -g "$desc" -h "$home" -H -s "$shell"	\
+			-G $group $user "$@"
 		;;
 	*)
 		${USERADD}					\
-			-c "$descr" -d "$home" -s "$shell"	\
-			-g $group -u $userid $user "$@"
+			-D -g "$desc" -h "$home" -H -s "$shell"	\
+			-G $group -u $userid $user "$@"
 		;;
 	esac
 }
@@ -149,7 +149,7 @@ addgroup()
 	if ${TEST} -n "${GROUPADD}" -a -x "${GROUPADD}"; then
 		${ECHO} "${PKGNAME}: Creating group \`\`$group''"
 		case $groupid in
-		"")	${GROUPADD} -r $group ;;
+		"")	${GROUPADD} $group ;;
 		*)	${GROUPADD} -g $groupid $group ;;
 		esac
 	fi

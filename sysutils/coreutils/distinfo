@@ -8,3 +8,4 @@ SHA1 (patch-lib-fflush.c) = 106e9c7d05fff290f24cb69e1b2c80d0077c62bd
 SHA1 (patch-lib-fseeko.c) = 9f4b0294698648011c64869fc0e642f910e9d47f
 SHA1 (patch-lib_parse-datetime.c) = 9a2143f0d6e908c2b340a2520f2a280c5fb80e6d
 SHA1 (patch-lib_string.in.h) = 37167af962d1cfe9196d11e4250d9e9628d9eb73
+SHA1 (patch-aq) = 02186df2372b3317cc2df6a8230cc198ac3eb4e9

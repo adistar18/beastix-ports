@@ -178,10 +178,10 @@ _GCC_VERSION=	0
 .endif
 _GCC_PKG=	gcc-${_GCC_VERSION:C/-.*$//}
 
-.if !empty(_CC:M${LOCALBASE}/*)
-_IS_BUILTIN_GCC=	NO
-GCC_REQD+=		${_GCC_VERSION}
-.else
+#.if !empty(_CC:M${LOCALBASE}/*)
+#_IS_BUILTIN_GCC=	NO
+#GCC_REQD+=		${_GCC_VERSION}
+#.else
 .  if !empty(_CC:M/*)
 #
 # GCC in older versions of Darwin report "Apple Computer ... based on gcc
@@ -195,7 +195,7 @@ _IS_BUILTIN_GCC=	NO
 .  else
 _IS_BUILTIN_GCC=	NO
 .  endif
-.endif
+#.endif
 
 # Distill the GCC_REQD list into a single _GCC_REQD value that is the
 # highest version of GCC required.

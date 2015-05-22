@@ -30,4 +30,5 @@ SHA1 (patch-libf95.a-0.93_io_read.c) = 594bcfb15e59dcaaec5a6a21a58af17e8f41eae9
 SHA1 (patch-libf95.a-0.93_math_ff.c) = 353121bc08a86765d18b0e6f051ba91f7e65e9c2
 SHA1 (patch-libf95.a-0.93_math_x87.S) = d1eb02bd2358b6abb9b8dc3e32629cba540adcc4
 SHA1 (patch-libf95.a-0.93_quad_power16.c) = fc7375aa90ecf75bb8ba26d41739614040b16e09
+SHA1 (patch-musl) = 8c02beac40b41abfb0e73e83c3bfe4ec3c101a0f
 SHA1 (patch-libf95.a-0.93_runtime_main.c) = dfde68072f38bf5bbb9c54ebeea5b9ce07d0c6be

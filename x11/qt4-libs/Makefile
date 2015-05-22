@@ -113,11 +113,12 @@ do-install:
 		${WRKSRC}/plugins/bearer/libqgenericbearer.la \
 		${DESTDIR}${QTPREFIX}/plugins/bearer/
 #.endfor
-.for f in qcncodecs qjpcodecs qkrcodecs qtwcodecs
-	${LIBTOOL} --mode=install ${INSTALL_LIB} \
-		${WRKSRC}/plugins/codecs/lib${f}.la \
-		${DESTDIR}${QTPREFIX}/plugins/codecs/
-.endfor
+# [Gregor] We don't actually build these codecs on musl
+#.for f in qcncodecs qjpcodecs qkrcodecs qtwcodecs
+#	${LIBTOOL} --mode=install ${INSTALL_LIB} \
+#		${WRKSRC}/plugins/codecs/lib${f}.la \
+#		${DESTDIR}${QTPREFIX}/plugins/codecs/
+#.endfor
 .for f in qglgraphicssystem qtracegraphicssystem
 	${LIBTOOL} --mode=install ${INSTALL_LIB} \
 		${WRKSRC}/plugins/graphicssystems/lib${f}.la \

@@ -67,6 +67,8 @@
  * OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF
  * SUCH DAMAGE.
  */
+ 
+#include <strings.h> /* for ffs */
 
 #ifndef MAKE_NATIVE
 static char rcsid[] = "$NetBSD: targ.c,v 1.5 2011/06/18 22:39:46 bsiegert Exp $";

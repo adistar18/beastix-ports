@@ -317,7 +317,6 @@ lib/gimp/2.0/plug-ins/file-tga
 lib/gimp/2.0/plug-ins/file-tiff-load
 lib/gimp/2.0/plug-ins/file-tiff-save
 lib/gimp/2.0/plug-ins/file-uri
-lib/gimp/2.0/plug-ins/file-wmf
 lib/gimp/2.0/plug-ins/file-xbm
 lib/gimp/2.0/plug-ins/file-xjt
 ${PLIST.remote}lib/gimp/2.0/plug-ins/file-xmc

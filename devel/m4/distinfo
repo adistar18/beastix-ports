@@ -7,3 +7,4 @@ SHA1 (patch-ab) = 9e9527cdd4b7ba3501d603f0e5ca60c2150e4359
 SHA1 (patch-isnan.c) = a960f35e5168bed47c5924e36bfb254dc1a44621
 SHA1 (patch-lib_fpending.h) = 6f29893c24b03916200f36867ad30ba101f8ef16
 SHA1 (patch-lib_stdio.in.h) = cc5a8572e274b576a154c7a6b14f0a14de5abacd
+SHA1 (patch-update_freadahead) = 0aa02b7f4fa537b92de06777289b41ea086aa0bd

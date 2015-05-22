@@ -13,6 +13,7 @@ __initialized__:
 .endif
 
 .PHONY:		catinstall maninstall catpages manpages catlinks manlinks cleanman html installhtml cleanhtml
+MKMAN?=no
 .if ${MKMAN} != "no"
 realinstall:	${MANINSTALL}
 .endif
@@ -40,11 +41,10 @@ TMACDIR?=	${DESTDIR}/usr/share/groff/1.17.2/tmac
 TMACDIR?=	${DESTDIR}/usr/share/groff/tmac
 .endif
 HTMLDIR?=	${DESTDIR}/usr/share/man
-CATDEPS?=	${TMACDIR}/mandoc.tmac \
-		${TMACDIR}/doc.tmac
+CATDEPS?=
 MANTARGET?=	cat
-NROFF?=		nroff -Tascii
-GROFF?=		groff -Tascii
+NROFF?=		cat
+GROFF?=		cat
 TBL?=		tbl
 
 

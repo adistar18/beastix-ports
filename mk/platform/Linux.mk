@@ -23,7 +23,7 @@ CPP_PRECOMP_FLAGS?=	# unset
 DEF_UMASK?=		022
 DEFAULT_SERIAL_DEVICE?=	/dev/null
 EXPORT_SYMBOLS_LDFLAGS?=	# Don't add symbols to the dynamic symbol table
-GROUPADD?=		/usr/sbin/groupadd
+GROUPADD?=		/usr/bin/addgroup
 MOTIF_TYPE_DEFAULT?=	motif	# default 2.0 compatible libs type
 .if exists(/etc/ssdlinux_version)
 NOLOGIN?=		/sbin/nologin
@@ -42,7 +42,7 @@ SERIAL_DEVICES?=	/dev/null
 ULIMIT_CMD_datasize?=	ulimit -d `ulimit -H -d`
 ULIMIT_CMD_stacksize?=	ulimit -s `ulimit -H -s`
 ULIMIT_CMD_memorysize?=	ulimit -m `ulimit -H -m`
-USERADD?=		/usr/sbin/useradd
+USERADD?=		/usr/bin/adduser
 
 _OPSYS_EMULDIR.linux=	# empty
 _OPSYS_EMULDIR.linux32=	# empty

@@ -19,6 +19,9 @@ WRKSRC=			${WRKDIR}/motif-${PKGVER}
 
 CONFLICTS+=		lesstif-[0-9]* openmotif-[0-9]*
 
+# [Gregor] Another weird libiconv issue
+CFLAGS+=		-liconv
+
 USE_LIBTOOL=		yes
 USE_TOOLS+=		flex gmake tbl pkg-config automake yacc
 GNU_CONFIGURE=		yes

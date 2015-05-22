@@ -23,6 +23,9 @@ CONFIGURE_ARGS+=	--without-python
 
 PKGCONFIG_OVERRIDE=	libxml-2.0.pc.in
 
+# [Gregor] Threading support is broken on musl
+CONFIGURE_ARGS+=	--without-threads
+
 .include "options.mk"
 
 # allow thread-awareness, but make sure the library is not

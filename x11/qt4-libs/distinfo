@@ -73,5 +73,6 @@ SHA1 (patch-src_gui_image_qbmphandler.cpp) = efe717ee805f808dc8a1ce7c56b3872bc3d
 SHA1 (patch-src_gui_kernel_qcocoaapplicationdelegate__mac.mm) = 0caa9b006b3ffee4ab747fca9fd224c7c49211c9
 SHA1 (patch-src_network_ssl_qsslsocket__openssl__symbols.cpp) = 3ad682b86d2e9bd2b282caa298508dc3e9dd8566
 SHA1 (patch-src_network_ssl_qsslsocket__openssl__symbols__p.h) = 417846ba9edab8638cafa41a54ef60029467ef80
+SHA1 (patch-qq) = 0b23302194af00685017cc4319c3b6cb10fc1fae
 SHA1 (patch-src_plugins_accessible_widgets_itemviews.cpp) = 1456fbaacef33f3b2422158d758d02990845048a
 SHA1 (patch-src_scripttools_debugging_qscriptdebuggerconsole.cpp) = eea948f07fd9e595c7813aa485e985407dfcfbf9

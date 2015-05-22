@@ -1,0 +1,11 @@
+diff -r 1ceaf4291bd1 src/polkit-dbus/polkit-resolve-exe-helper.c
+--- src/polkit-dbus/polkit-resolve-exe-helper.c	Sun May 06 03:39:34 2012 +0000
++++ src/polkit-dbus/polkit-resolve-exe-helper.c	Sun May 06 03:39:59 2012 +0000
+@@ -52,6 +52,7 @@
+ #include <utime.h>
+ #include <fcntl.h>
+ #include <dirent.h>
++#include <limits.h>
+ 
+ #include <polkit-dbus/polkit-dbus.h>
+ #include <polkit/polkit-private.h>

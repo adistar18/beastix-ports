@@ -47,6 +47,7 @@ SHA1 (patch-hw_xfree86_common_compiler.h) = 88de747715b80b22f448869ab32dce1641bc
 SHA1 (patch-hw_xfree86_dri2_dri2.c) = 32a8c309f9ae417c99fe81b6a9c3b1f402880981
 SHA1 (patch-hw_xfree86_dri2_dri2ext.c) = bc2b57e4bef5ae386d1d3a015c01d243f8880ab4
 SHA1 (patch-hw_xfree86_os-support_xf86__OSlib.h) = 7c2760509610b44915da077b22899bef9c338cc1
+SHA1 (patch-qq) = 75364154810f7a805ded4e5da6f62ea7d91e05a8
 SHA1 (patch-include_dix.h) = ab0dc2debd87f29c0ac7f971a3cad4850b239c3a
 SHA1 (patch-include_regionstr.h) = c6f3e3b263593b622e7087d3ebe2b470cf9526e3
 SHA1 (patch-os_access.c) = 94ee087d68bc9ba713dbe42102f971a1b8e6a3c4

@@ -1,0 +1,51 @@
+diff -r 807537ed80b4 mDNSPosix/nss_mdns.c
+--- mDNSPosix/nss_mdns.c	Tue Feb 19 05:06:36 2013 +0000
++++ mDNSPosix/nss_mdns.c	Tue Feb 19 05:14:07 2013 +0000
+@@ -379,14 +379,22 @@
+ #define ENTNAME  hostent
+ #define DATABASE "hosts"
+ 
+-#include <nss.h>
++//#include <nss.h>
+ 	// For nss_status
+ #include <netdb.h>
+ 	// For hostent
+ #include <sys/types.h>
+ 	// For size_t
+ 
+-typedef enum nss_status nss_status;
++#define NSS_STATUS_SUCCESS 0
++#define NSS_STATUS_NOTFOUND 1
++#define NSS_STATUS_UNAVAIL 2
++#define NSS_STATUS_TRYAGAIN 3
++#define NSS_STATUS_RETURN 4
++#define NETDB_INTERNAL NULL
++
++//typedef enum nss_status nss_status;
++typedef int nss_status;
+ typedef struct hostent hostent;
+ 
+ /*
+diff -r 807537ed80b4 mDNSShared/CommonServices.h
+--- mDNSShared/CommonServices.h	Tue Feb 19 05:06:36 2013 +0000
++++ mDNSShared/CommonServices.h	Tue Feb 19 05:14:07 2013 +0000
+@@ -211,6 +211,7 @@
+ 	
+ 	#include	<stdint.h>
+ 	#include	<arpa/inet.h>
++	#include	<sys/socket.h>
+ 	
+ #elif ( TARGET_OS_NETBSD )
+ 
+diff -r 807537ed80b4 mDNSShared/dnssd_clientstub.c
+--- mDNSShared/dnssd_clientstub.c	Tue Feb 19 05:06:36 2013 +0000
++++ mDNSShared/dnssd_clientstub.c	Tue Feb 19 05:14:07 2013 +0000
+@@ -71,7 +71,7 @@
+ 		}
+ #else
+ 
+-	#include <sys/fcntl.h>		// For O_RDWR etc.
++	#include <fcntl.h>		// For O_RDWR etc.
+ 	#include <sys/time.h>
+ 	#include <sys/socket.h>
+ 	#include <syslog.h>

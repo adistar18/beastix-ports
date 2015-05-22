@@ -15,3 +15,4 @@ SHA1 (patch-nsprpub_pr_include_md_prosdep.h) = dd90cda6251aeeb10f02ef594c0248423
 SHA1 (patch-nsprpub_pr_src_md_unix_uxrng.c) = 1d0f4ef5560ccdd7bf7097e987a06a34fc49621c
 SHA1 (patch-nsprpub_pr_src_pthreads_ptio.c) = f83cc645a7114bf122adf62fd69808ad00bb989a
 SHA1 (patch-nsprpub_pr_src_pthreads_ptsynch.c) = 78c4b1063d6998b9cc135a99b425f9008753922d
+SHA1 (patch-qq) = 376609106ecf27242ff46d47c4d78c6ca131fdea

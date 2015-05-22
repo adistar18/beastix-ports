@@ -35,3 +35,4 @@ SHA1 (patch-src_mesa_main_compiler.h) = b164781b541cb83b64597facbb7a7e21d8bdb686
 SHA1 (patch-src_mesa_main_context.c) = 6b6f1e3ad4ea189291fcf221d4b8bfbd650f8908
 SHA1 (patch-src_mesa_main_imports.c) = d0c50004c749e4c5c136ac2ed50a6989ca90065f
 SHA1 (patch-src_mesa_main_imports.h) = f5a96195b3a14294ca3389c9fe17a6076c46db8a
+SHA1 (patch-zz-musl) = e03a5242f54e339be660a4adc5396bc2e86e0afc

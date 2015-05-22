@@ -1,0 +1,56 @@
+diff -r 4aa4d9dd485b shlibs/blkid/src/Makefile.am
+--- shlibs/blkid/src/Makefile.am	Sun May 06 03:11:57 2012 +0000
++++ shlibs/blkid/src/Makefile.am	Sun May 06 03:12:33 2012 +0000
+@@ -59,15 +59,15 @@
+ 
+ # move lib from $(usrlib_execdir) to $(libdir) if needed
+ install-exec-hook:
+-	if test "$(usrlib_execdir)" != "$(libdir)"; then \
+-		mkdir -p $(DESTDIR)$(libdir); \
+-		mv $(DESTDIR)$(usrlib_execdir)/libblkid.so.* $(DESTDIR)$(libdir); \
+-		so_img_name=$$(readlink $(DESTDIR)$(usrlib_execdir)/libblkid.so); \
+-		so_img_rel_target=$$(echo $(usrlib_execdir) | sed 's,\(^/\|\)[^/][^/]*,..,g'); \
+-		(cd $(DESTDIR)$(usrlib_execdir) && \
+-			rm -f libblkid.so && \
+-			$(LN_S) $$so_img_rel_target$(libdir)/$$so_img_name libblkid.so); \
+-	fi
++#	if test "$(usrlib_execdir)" != "$(libdir)"; then \
++#		mkdir -p $(DESTDIR)$(libdir); \
++#		mv $(DESTDIR)$(usrlib_execdir)/libblkid.so.* $(DESTDIR)$(libdir); \
++#		so_img_name=$$(readlink $(DESTDIR)$(usrlib_execdir)/libblkid.so); \
++#		so_img_rel_target=$$(echo $(usrlib_execdir) | sed 's,\(^/\|\)[^/][^/]*,..,g'); \
++#		(cd $(DESTDIR)$(usrlib_execdir) && \
++#			rm -f libblkid.so && \
++#			$(LN_S) $$so_img_rel_target$(libdir)/$$so_img_name libblkid.so); \
++#	fi
+ 
+ uninstall-hook:
+ 	rm -f $(DESTDIR)$(libdir)/libblkid.so*
+diff -r 4aa4d9dd485b shlibs/blkid/src/Makefile.in
+--- shlibs/blkid/src/Makefile.in	Sun May 06 03:11:57 2012 +0000
++++ shlibs/blkid/src/Makefile.in	Sun May 06 03:12:33 2012 +0000
+@@ -922,15 +922,15 @@
+ 
+ # move lib from $(usrlib_execdir) to $(libdir) if needed
+ install-exec-hook:
+-	if test "$(usrlib_execdir)" != "$(libdir)"; then \
+-		mkdir -p $(DESTDIR)$(libdir); \
+-		mv $(DESTDIR)$(usrlib_execdir)/libblkid.so.* $(DESTDIR)$(libdir); \
+-		so_img_name=$$(readlink $(DESTDIR)$(usrlib_execdir)/libblkid.so); \
+-		so_img_rel_target=$$(echo $(usrlib_execdir) | sed 's,\(^/\|\)[^/][^/]*,..,g'); \
+-		(cd $(DESTDIR)$(usrlib_execdir) && \
+-			rm -f libblkid.so && \
+-			$(LN_S) $$so_img_rel_target$(libdir)/$$so_img_name libblkid.so); \
+-	fi
++#	if test "$(usrlib_execdir)" != "$(libdir)"; then \
++#		mkdir -p $(DESTDIR)$(libdir); \
++#		mv $(DESTDIR)$(usrlib_execdir)/libblkid.so.* $(DESTDIR)$(libdir); \
++#		so_img_name=$$(readlink $(DESTDIR)$(usrlib_execdir)/libblkid.so); \
++#		so_img_rel_target=$$(echo $(usrlib_execdir) | sed 's,\(^/\|\)[^/][^/]*,..,g'); \
++#		(cd $(DESTDIR)$(usrlib_execdir) && \
++#			rm -f libblkid.so && \
++#			$(LN_S) $$so_img_rel_target$(libdir)/$$so_img_name libblkid.so); \
++#	fi
+ 
+ uninstall-hook:
+ 	rm -f $(DESTDIR)$(libdir)/libblkid.so*

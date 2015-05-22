@@ -127,6 +127,9 @@ BUILDLINK_API_DEPENDS.xf86driproto+=	xf86driproto>=2.1.0
 BUILD_DEPENDS+=		tradcpp-[0-9]*:../../devel/tradcpp
 CONFIGURE_ENV+=		ac_cv_path_RAWCPP="${PREFIX}/bin/tradcpp -Uunix"
 
+# [Gregor] X-ACE doesn't work for unknown reasons
+CONFIGURE_ARGS+=	--disable-xace
+
 .include "options.mk"
 
 .include "../../devel/ncurses/buildlink3.mk"

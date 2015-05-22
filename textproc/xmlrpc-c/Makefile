@@ -63,5 +63,7 @@ LDFLAGS.MirBSD+=	${PTHREAD_LINKFLAGS}
 
 .include "../../www/curl/buildlink3.mk"
 .include "../../www/libwww/buildlink3.mk"
+.include "../../converters/libiconv/buildlink3.mk"
+.include "../../devel/gettext-lib/buildlink3.mk"
 .include "../../mk/pthread.buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

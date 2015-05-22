@@ -45,3 +45,4 @@ SHA1 (patch-pack.c) = d1e2c9871d2ba012a9136bdf708c2d42588d863c
 SHA1 (patch-test_rubygems_test__gem.rb) = fe8b8e436b255595122d2a01462ba0a686575f24
 SHA1 (patch-tool_rbinstall.rb) = f0497085a09b31145f57028b30e335b09acabcff
 SHA1 (patch-vsnprintf.c) = 7bb4ca07381536717518143ef7803634168ca9fa
+SHA1 (patch-qq) = 7f4871f89582ebf99f4119a5397720c83a1603fd

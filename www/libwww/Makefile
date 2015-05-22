@@ -24,8 +24,9 @@ CONFIGURE_ARGS+=	--with-ssl=${SSLBASE:Q}
 
 .include "options.mk"
 
+# [Gregor] Changed to zcat because busybox gets confused if you misname its things
 post-extract:
-	gzcat ${DISTDIR}/libwww-configure-5.4.0nb2.gz > ${WRKSRC}/configure
+	zcat ${DISTDIR}/libwww-configure-5.4.0nb2.gz > ${WRKSRC}/configure
 
 pre-configure:
 	chmod a+x ${WRKSRC}/configure
