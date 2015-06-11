@@ -1,4 +1,6 @@
-This file was automatically generated and lists the licenses for every package, it is intended to be used for auditing the ports tree for nonfree packages
+This file was automatically generated and lists the licenses for every package, it is intended to be used for auditing the ports tree for nonfree packages.
+
+Note that some of the nonfree packages may already be deleted from the tree.
 
 
 ./fonts/tex-luaotfload/Makefile LICENSE= gnu-gpl-v2

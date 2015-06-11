@@ -1,2 +1,0 @@
-@comment $NetBSD: PLIST,v 1.5 2011/08/05 15:12:20 abs Exp $
-${EMULSUBDIRSLASH}usr/lib/libflashsupport.so
