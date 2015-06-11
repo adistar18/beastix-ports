@@ -3,3 +3,15 @@ Some parts may be patched in order to operate better on Beastix.
 
 Please ensure you use the correct version for your version of Beastix as future changes may break compatibility.
 The branching policy is the same as that used by the base system, please see releng/README in the base system.
+
+How to use:
+Extract the tarball (or checkout from git) into /usr/ports and do the following:
+
+cd ./bootstrap
+./bootstrap --full
+export PATH=/usr/pkg/bin:$PATH
+
+cd /usr/ports/<category>/<package>
+bmake install
+
+GNU make (the default system-wide make) will not work - unfortunately it is required for building the base system and is thus the default
