@@ -8,6 +8,8 @@
 
 #include "config.h"	/* system and option configuration info */
 
+#define HAVE_PROTOTYPES 1
+
 #ifdef HAVE_PROTOTYPES
 # define	ARGS(args)	args	/* prototype declaration */
 #else
@@ -107,6 +109,8 @@ void *memset ARGS((void *d, int c, size_t n));
 void *memmove ARGS((void *d, const void *s, size_t n));
 # endif
 #endif /* HAVE_MEMMOVE */
+
+#define HAVE_PROTOTYPES 1
 
 #ifdef HAVE_PROTOTYPES
 # include <stdarg.h>

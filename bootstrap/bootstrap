@@ -30,6 +30,7 @@
 # the following environment variables are honored:
 # compiler/linker flags: CFLAGS, CPPFLAGS, LDFLAGS, LIBS
 # tools: CP, GREP, ID, MKDIR, SH, TEST, TOUCH, XARGS
+ln -s /bin/cpp /lib/cpp
 
 
 BOOTSTRAP_VERSION=20060721
